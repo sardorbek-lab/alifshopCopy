@@ -1,0 +1,251 @@
+.cart-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-actions a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.delete-selected {
+    background: none;
+    border: none;
+    color: #e63946;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.select-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-container {
+    display: flex;
+    gap: 30px;
+}
+
+.cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.extra-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discounted-price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    background: #f1f1f1;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.quantity-count {
+    font-size: 18px;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-summary {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.summary-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    background-color:#ffbe1f;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color:#eeb012;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 20px;
+    text-align: center;
+}
+.empty-h1{
+    font-size: 30px;
+}
+.home-btn {
+    background-color:#ffbe1f ;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background-color:#eeb012;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: start;
+    gap: 110px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.header-left p{
+    color: #999;
+    margin-top: 5px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-left h2{
+    font-size: 31px;
+    font-weight: 606;
+}
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.action-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+    font-size: 0.95rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-selected {
+    color: #e63946;
+}
+
+.select-all input[type="checkbox"] {
+    margin-left: 5px;
+}
+
