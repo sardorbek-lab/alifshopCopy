@@ -1,0 +1,43 @@
+/* Brendlar.css */
+.brands-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* default: 6ta ustun */
+    gap: 20px;
+}
+
+.brand-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.brand-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 80px;
+}
+
+.brand-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 960px dan kichik ekranlar uchun */
+@media (max-width: 960px) {
+    .brands-grid {
+        grid-template-columns: repeat(6, 1fr);
+        /* 3 ustunli grid */
+        
+    }
+    
+}
+

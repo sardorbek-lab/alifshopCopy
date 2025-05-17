@@ -152,7 +152,7 @@
 
 .limit-button {
     margin-top: 20px;
-    background-color:#39b980;
+    background-color: #39b980;
     color: white;
     padding: 14px;
     width: 94%;
@@ -163,10 +163,12 @@
     justify-content: space-between;
     display: flex;
 }
-.limit-text{
+
+.limit-text {
     display: flex;
     flex-direction: column;
 }
+
 .cart-controls {
     margin-top: 20px;
     display: flex;
@@ -214,7 +216,7 @@
 .heart-icon,
 .heart-icon-filled {
     font-size: 24px;
-    color:rgb(168, 168, 168) ;
+    color: rgb(168, 168, 168);
 }
 
 .heart-icon-filled {

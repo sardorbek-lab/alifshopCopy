@@ -299,76 +299,45 @@
 }
 
 /* 
-@media (max-width: 1200px) {
+@media (max-width: 660px) {
 
+    .setka-konteyner {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 16px;
+    }
 
     .asosiy-konteyner {
-        padding: 20px 0px;
-
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
+
 
     .karta {
         height: auto;
-        padding: 15px;
     }
-
-    .rasm {
-        height: 150px;
+    .matn{
+        display: flex !important;
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
     }
-
-    .kontent {
-        flex-grow: 0;
-    }
-
-    .narx {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .chegirma {
-        font-size: 0.9rem;
-    }
-
-    .asl-narx {
-        font-size: 0.8rem;
-    }
-
-    .chegirma-yorligi {
-        font-size: 14px;
-        top: 130px;
-    }
-
-    .savatga-tugma {
-        width: 90%;
-    }
-
-    .yurak {
-        top: 5px;
-        right: 5px;
-        font-size: 22px;
-    }
-
-    .matn {
-        gap: 20px;
-    }
-
     .matn h1 {
-        font-size: 28px;
+        font-size: 20px !important;
+       
     }
 
     .matn p {
-        font-size: 16px;
+        font-size: 14px  !important;
     }
 
     .brands-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .brand-card img {
-        width: 80px;
-        height: 80px;
+    .phone-image img {
+        max-width: 180px;
     }
 
     .promo-content h2 {
@@ -380,143 +349,1123 @@
     }
 
     .store-buttons img {
-        height: 30px;
+        height: 32px;
     }
 
-    .bottom-content {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .qr-code img {
+        width: 100px;
+    }
+
+    .info-box {
+        padding: 15px;
     }
 
     .info-box h3 {
         font-size: 16px;
     }
 
-    .info-box p {
-        font-size: 12px;
-    }
-
-    .info-box a {
-        font-size: 14px;
+    .info-box p,
+    .qr-code p {
+        font-size: 13px;
     }
 } */
+@media (max-width: 1160px) {
 
+    /* Main container padding adjustment */
+    .asosiy-konteyner {}
 
-@media (max-width: 1200px) {
-    .asosiy-konteyner {
-        padding: 20px 0;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
+    /* Change grid to 5 columns instead of 6 */
+    .setka-konteyner {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
     }
 
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        /* Cardlar kengligini moslashtirish */
-        gap: 10px;
-        /* Cardlar orasidagi bo'shliq */
-        width: 100%;
-        padding: 0;
-        /* Qo'shimcha paddinglarni olib tashlash */
-    }
-
+    /* Adjust card height and padding */
     .karta {
-        width: 100%;
-        /* Card to'liq kenglikni egallashi uchun */
-        height: auto;
-        padding: 15px;
-        box-sizing: border-box;
-        margin: 0;
-        /* Margin bo'lsa, olib tashlash */
+        height: 350px;
+        padding: 10px;
     }
 
+    /* Adjust image height */
     .rasm {
-        width: 100%;
-        height: 150px;
-        object-fit: contain;
+        height: 160px;
     }
 
-    .kontent {
-        flex-grow: 0;
-    }
-
-    .narx {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .chegirma {
-        font-size: 0.9rem;
-    }
-
-    .asl-narx {
-        font-size: 0.8rem;
-    }
-
+    /* Adjust discount label position */
     .chegirma-yorligi {
+        top: 140px;
         font-size: 14px;
-        top: 130px;
-        left: 10px;
+        padding: 1px 8px;
     }
 
+    /* Adjust button size */
     .savatga-tugma {
-        width: 100%;
-        /* Tugma to'liq kenglikni egallashi uchun */
+        width: 100px;
+        height: 34px;
+        font-size: 15px;
     }
 
+    .savatga-ikona {
+        font-size: 19px;
+    }
+
+    /* Adjust heart icon */
     .yurak {
-        top: 5px;
-        right: 5px;
-        font-size: 22px;
+        font-size: 25px;
     }
 
+    /* Adjust heading section */
     .matn {
-        gap: 20px;
+        gap: 30px;
+        margin-bottom: 8px;
     }
 
     .matn h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .matn p {
-        font-size: 16px;
+        font-size: 19px;
+    }
+
+    /* Brand section adjustments */
+    .brands-container h2 {
+        font-size: 30px;
     }
 
     .brands-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 15px;
     }
 
     .brand-card img {
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
+    }
+
+    /* Info section adjustments */
+    .phone-image img {
+        max-width: 220px;
     }
 
     .promo-content h2 {
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    .store-buttons img {
+        height: 36px;
+    }
+
+    .qr-code img {
+        width: 110px;
+    }
+
+    .bottom-content {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .info-box h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1060px) {
+
+    /* Asosiy konteyner */
+    .setka-konteyner {
+        grid-template-columns: repeat(6, 1fr) !important;
+        gap: 16px;
+    }
+
+    .asosiy-konteyner {
+        padding: 20px 100px;
+
+
+    }
+
+    .asosiy-konteyner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Karta */
+    .karta {
+        height: 300px;
+        /* Kartani kichiklashtiramiz */
+        padding: 8px;
+    }
+
+    .rasm {
+        height: 120px;
+        /* Rasm balandligini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .chegirma-yorligi {
+        top: 100px;
+        /* Yorliqni moslashtiramiz */
+        font-size: 12px;
+        padding: 1px 8px;
+        left: 8px;
+    }
+
+    .savatga-tugma {
+        width: 100px;
+        /* Tugma kengligini kamaytiramiz */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .savatga-ikona {
+        font-size: 18px;
+        /* Ikona hajmini kamaytiramiz */
+    }
+
+    .yurak {
+        font-size: 24px;
+        /* Yurak ikonasini kichiklashtiramiz */
+        top: 8px;
+        right: 8px;
+    }
+
+    .kontent {
+        gap: 4px;
+    }
+
+    .narx {
+        font-size: 14px;
+    }
+
+    .asl-narx {
+        font-size: 0.75rem;
+    }
+
+    /* Matn */
+    .matn {
+        position: relative;
+        width: 300px;
+        left: -80px;
+    }
+
+    .matn h1 {
+        font-size: 20px !important;
+
+    }
+
+    .matn p {
+        font-size: 14px !important;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Brands konteyner */
+    .brands-container {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .brands-container h2 {
+        font-size: 24px;
+        /* Sarlavha hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        /* Kichikroq brand kartalari */
+        gap: 10px;
+    }
+
+    .brand-card {
+        padding: 10px;
+    }
+
+    .brand-card img {
+        width: 70px;
+        /* Rasm hajmini kamaytiramiz */
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .brand-card p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Info section */
+    .info-section {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        /* Vertikal joylashuv */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .phone-image img {
+        max-width: 150px;
+        /* Telefon rasmini kichiklashtiramiz */
+    }
+
+    .promo-content {
+        min-width: 100%;
+        /* To‘liq kenglik */
+        text-align: center;
+    }
+
+    .promo-content h2 {
+        font-size: 18px;
+        /* Sarlavha hajmini kamaytiramiz */
     }
 
     .promo-content p {
-        font-size: 14px;
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+        margin-bottom: 15px;
     }
 
     .store-buttons img {
         height: 30px;
+        /* Tugmalar hajmini kamaytiramiz */
+        margin-right: 8px;
+    }
+
+    .qr-code img {
+        width: 80px;
+        /* QR kod hajmini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .qr-code p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
     }
 
     .bottom-content {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
+        /* Bitta ustun */
+        gap: 15px;
+    }
+
+    .info-box {
+        padding: 15px;
     }
 
     .info-box h3 {
         font-size: 16px;
+        /* Sarlavha hajmini kamaytiramiz */
     }
 
     .info-box p {
-        font-size: 12px;
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
     }
 
     .info-box a {
+        font-size: 13px;
+        /* Havola matnini kichiklashtiramiz */
+    }
+}
+
+@media (max-width: 960px) {
+
+    /* Asosiy konteyner */
+    .setka-konteyner {
+        grid-template-columns: repeat(6, 1fr) !important;
+        gap: 16px;
+    }
+
+    .asosiy-konteyner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Karta */
+    .karta {
+        height: 300px;
+        /* Kartani kichiklashtiramiz */
+        padding: 8px;
+    }
+
+    .rasm {
+        height: 120px;
+        /* Rasm balandligini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .chegirma-yorligi {
+        top: 100px;
+        /* Yorliqni moslashtiramiz */
+        font-size: 12px;
+        padding: 1px 8px;
+        left: 8px;
+    }
+
+    .savatga-tugma {
+        width: 100px;
+        /* Tugma kengligini kamaytiramiz */
+        height: 32px;
         font-size: 14px;
     }
+
+    .savatga-ikona {
+        font-size: 18px;
+        /* Ikona hajmini kamaytiramiz */
+    }
+
+    .yurak {
+        font-size: 24px;
+        /* Yurak ikonasini kichiklashtiramiz */
+        top: 8px;
+        right: 8px;
+    }
+
+    .kontent {
+        gap: 4px;
+        /* Kontent ichidagi bo‘shliqni kamaytiramiz */
+    }
+
+    .narx {
+        font-size: 14px;
+        /* Narx matnini kichiklashtiramiz */
+    }
+
+    .asl-narx {
+        font-size: 0.75rem;
+        /* Asl narxni yanada kichiklashtiramiz */
+    }
+
+    /* Matn */
+    .matn {
+        /* Matn balandligini kamaytiramiz */
+        /* Bo‘shliqni kamaytiramiz */
+        position: relative;
+        width: 300px;
+        left: -110px;
+    }
+
+    .matn h1 {
+        font-size: 20px !important;
+        /* Sarlavha hajmini kamaytiramiz */
+
+    }
+
+    .matn p {
+        font-size: 14px !important;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Brands konteyner */
+    .brands-container {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .brands-container h2 {
+        font-size: 24px;
+        /* Sarlavha hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        /* Kichikroq brand kartalari */
+        gap: 10px;
+    }
+
+    .brand-card {
+        padding: 10px;
+    }
+
+    .brand-card img {
+        width: 70px;
+        /* Rasm hajmini kamaytiramiz */
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .brand-card p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Info section */
+    .info-section {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        /* Vertikal joylashuv */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .phone-image img {
+        max-width: 150px;
+        /* Telefon rasmini kichiklashtiramiz */
+    }
+
+    .promo-content {
+        min-width: 100%;
+        /* To‘liq kenglik */
+        text-align: center;
+    }
+
+    .promo-content h2 {
+        font-size: 18px;
+        /* Sarlavha hajmini kamaytiramiz */
+    }
+
+    .promo-content p {
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .store-buttons img {
+        height: 30px;
+        /* Tugmalar hajmini kamaytiramiz */
+        margin-right: 8px;
+    }
+
+    .qr-code img {
+        width: 80px;
+        /* QR kod hajmini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .qr-code p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    .bottom-content {
+        grid-template-columns: 1fr;
+        /* Bitta ustun */
+        gap: 15px;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 16px;
+        /* Sarlavha hajmini kamaytiramiz */
+    }
+
+    .info-box p {
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    .info-box a {
+        font-size: 13px;
+        /* Havola matnini kichiklashtiramiz */
+    }
+}
+
+
+@media (max-width: 860px) {
+
+    /* Asosiy konteyner */
+    .setka-konteyner {
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 16px;
+    }
+
+    .asosiy-konteyner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Karta */
+    .karta {
+        height: 300px;
+        /* Kartani kichiklashtiramiz */
+        padding: 8px;
+    }
+
+    .rasm {
+        height: 120px;
+        /* Rasm balandligini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .chegirma-yorligi {
+        top: 100px;
+        /* Yorliqni moslashtiramiz */
+        font-size: 12px;
+        padding: 1px 8px;
+        left: 8px;
+    }
+
+    .savatga-tugma {
+        width: 100px;
+        /* Tugma kengligini kamaytiramiz */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .savatga-ikona {
+        font-size: 18px;
+        /* Ikona hajmini kamaytiramiz */
+    }
+
+    .yurak {
+        font-size: 24px;
+        /* Yurak ikonasini kichiklashtiramiz */
+        top: 8px;
+        right: 8px;
+    }
+
+    .kontent {
+        gap: 4px;
+        /* Kontent ichidagi bo‘shliqni kamaytiramiz */
+    }
+
+    .narx {
+        font-size: 14px;
+        /* Narx matnini kichiklashtiramiz */
+    }
+
+    .asl-narx {
+        font-size: 0.75rem;
+        /* Asl narxni yanada kichiklashtiramiz */
+    }
+
+    /* Matn */
+    .matn {
+        /* Matn balandligini kamaytiramiz */
+        /* Bo‘shliqni kamaytiramiz */
+        position: relative;
+        width: 300px;
+        left: -110px;
+    }
+
+    .matn h1 {
+        font-size: 20px !important;
+        /* Sarlavha hajmini kamaytiramiz */
+
+    }
+
+    .matn p {
+        font-size: 14px !important;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Brands konteyner */
+    .brands-container {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .brands-container h2 {
+        font-size: 24px;
+        /* Sarlavha hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        /* Kichikroq brand kartalari */
+        gap: 10px;
+    }
+
+    .brand-card {
+        padding: 10px;
+    }
+
+    .brand-card img {
+        width: 70px;
+        /* Rasm hajmini kamaytiramiz */
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .brand-card p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Info section */
+    .info-section {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        /* Vertikal joylashuv */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .phone-image img {
+        max-width: 150px;
+        /* Telefon rasmini kichiklashtiramiz */
+    }
+
+    .promo-content {
+        min-width: 100%;
+        /* To‘liq kenglik */
+        text-align: center;
+    }
+
+    .promo-content h2 {
+        font-size: 18px;
+        /* Sarlavha hajmini kamaytiramiz */
+    }
+
+    .promo-content p {
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .store-buttons img {
+        height: 30px;
+        /* Tugmalar hajmini kamaytiramiz */
+        margin-right: 8px;
+    }
+
+    .qr-code img {
+        width: 80px;
+        /* QR kod hajmini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .qr-code p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    .bottom-content {
+        grid-template-columns: 1fr;
+        /* Bitta ustun */
+        gap: 15px;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 16px;
+        /* Sarlavha hajmini kamaytiramiz */
+    }
+
+    .info-box p {
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    .info-box a {
+        font-size: 13px;
+        /* Havola matnini kichiklashtiramiz */
+    }
+}
+
+@media (max-width: 760px) {
+
+    /* Asosiy konteyner */
+    .setka-konteyner {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 16px;
+    }
+
+    .asosiy-konteyner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Karta */
+    .karta {
+        height: 300px;
+        /* Kartani kichiklashtiramiz */
+        padding: 8px;
+    }
+
+    .rasm {
+        height: 120px;
+        /* Rasm balandligini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .chegirma-yorligi {
+        top: 100px;
+        /* Yorliqni moslashtiramiz */
+        font-size: 12px;
+        padding: 1px 8px;
+        left: 8px;
+    }
+
+    .savatga-tugma {
+        width: 100px;
+        /* Tugma kengligini kamaytiramiz */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .savatga-ikona {
+        font-size: 18px;
+        /* Ikona hajmini kamaytiramiz */
+    }
+
+    .yurak {
+        font-size: 24px;
+        /* Yurak ikonasini kichiklashtiramiz */
+        top: 8px;
+        right: 8px;
+    }
+
+    .kontent {
+        gap: 4px;
+        /* Kontent ichidagi bo‘shliqni kamaytiramiz */
+    }
+
+    .narx {
+        font-size: 14px;
+        /* Narx matnini kichiklashtiramiz */
+    }
+
+    .asl-narx {
+        font-size: 0.75rem;
+        /* Asl narxni yanada kichiklashtiramiz */
+    }
+
+    /* Matn */
+    .matn {
+        /* Matn balandligini kamaytiramiz */
+        /* Bo‘shliqni kamaytiramiz */
+        position: relative;
+        width: 300px;
+        left: -110px;
+    }
+
+    .matn h1 {
+        font-size: 20px !important;
+        /* Sarlavha hajmini kamaytiramiz */
+
+    }
+
+    .matn p {
+        font-size: 14px !important;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    /* Asosiy konteyner */
+    .setka-konteyner {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 16px;
+    }
+
+    .asosiy-konteyner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Karta */
+    .karta {
+        height: 300px;
+        /* Kartani kichiklashtiramiz */
+        padding: 8px;
+    }
+
+    .rasm {
+        height: 120px;
+        /* Rasm balandligini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .chegirma-yorligi {
+        top: 100px;
+        /* Yorliqni moslashtiramiz */
+        font-size: 12px;
+        padding: 1px 8px;
+        left: 8px;
+    }
+
+    .savatga-tugma {
+        width: 100px;
+        /* Tugma kengligini kamaytiramiz */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .savatga-ikona {
+        font-size: 18px;
+        /* Ikona hajmini kamaytiramiz */
+    }
+
+    .yurak {
+        font-size: 24px;
+        /* Yurak ikonasini kichiklashtiramiz */
+        top: 8px;
+        right: 8px;
+    }
+
+    .kontent {
+        gap: 4px;
+        /* Kontent ichidagi bo‘shliqni kamaytiramiz */
+    }
+
+    .narx {
+        font-size: 14px;
+        /* Narx matnini kichiklashtiramiz */
+    }
+
+    .asl-narx {
+        font-size: 0.75rem;
+        /* Asl narxni yanada kichiklashtiramiz */
+    }
+
+    /* Matn */
+    .matn {
+        /* Matn balandligini kamaytiramiz */
+        /* Bo‘shliqni kamaytiramiz */
+        position: relative;
+        width: 300px;
+        left: -110px;
+    }
+
+    .matn h1 {
+        font-size: 20px !important;
+        /* Sarlavha hajmini kamaytiramiz */
+
+    }
+
+    .matn p {
+        font-size: 14px !important;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Brands konteyner */
+    .brands-container {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .brands-container h2 {
+        font-size: 24px;
+        /* Sarlavha hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        /* Kichikroq brand kartalari */
+        gap: 10px;
+    }
+
+    .brand-card {
+        padding: 10px;
+    }
+
+    .brand-card img {
+        width: 70px;
+        /* Rasm hajmini kamaytiramiz */
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .brand-card p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    /* Info section */
+    .info-section {
+        max-width: 100%;
+        /* To‘liq kenglik */
+        padding: 10px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        /* Vertikal joylashuv */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .phone-image img {
+        max-width: 150px;
+        /* Telefon rasmini kichiklashtiramiz */
+    }
+
+    .promo-content {
+        min-width: 100%;
+        /* To‘liq kenglik */
+        text-align: center;
+    }
+
+    .promo-content h2 {
+        font-size: 18px;
+        /* Sarlavha hajmini kamaytiramiz */
+    }
+
+    .promo-content p {
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+        margin-bottom: 15px;
+    }
+
+    .store-buttons img {
+        height: 30px;
+        /* Tugmalar hajmini kamaytiramiz */
+        margin-right: 8px;
+    }
+
+    .qr-code img {
+        width: 80px;
+        /* QR kod hajmini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .qr-code p {
+        font-size: 12px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    .bottom-content {
+        grid-template-columns: 1fr;
+        /* Bitta ustun */
+        gap: 15px;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 16px;
+        /* Sarlavha hajmini kamaytiramiz */
+    }
+
+    .info-box p {
+        font-size: 13px;
+        /* Matn hajmini kamaytiramiz */
+    }
+
+    .info-box a {
+        font-size: 13px;
+        /* Havola matnini kichiklashtiramiz */
+    }
+}
+
+
+
+@media (max-width: 560px) {
+
+    /* Asosiy konteyner */
+    .setka-konteyner {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 16px;
+    }
+
+    .asosiy-konteyner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Karta */
+    .karta {
+        height: 300px;
+        /* Kartani kichiklashtiramiz */
+        padding: 8px;
+    }
+
+    .rasm {
+        height: 120px;
+        /* Rasm balandligini kamaytiramiz */
+        margin-bottom: 8px;
+    }
+
+    .chegirma-yorligi {
+        top: 100px;
+        /* Yorliqni moslashtiramiz */
+        font-size: 12px;
+        padding: 1px 8px;
+        left: 8px;
+    }
+
+    .savatga-tugma {
+        width: 100px;
+        /* Tugma kengligini kamaytiramiz */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .savatga-ikona {
+        font-size: 18px;
+        /* Ikona hajmini kamaytiramiz */
+    }
+
+    .yurak {
+        font-size: 24px;
+        /* Yurak ikonasini kichiklashtiramiz */
+        top: 8px;
+        right: 8px;
+    }
+
+    .kontent {
+        gap: 4px;
+        /* Kontent ichidagi bo‘shliqni kamaytiramiz */
+    }
+
+    .narx {
+        font-size: 14px;
+        /* Narx matnini kichiklashtiramiz */
+    }
+
+    .asl-narx {
+        font-size: 0.75rem;
+        /* Asl narxni yanada kichiklashtiramiz */
+    }
+
+    /* Matn */
+    .matn {
+        position: relative;
+        width: 300px;
+        left: -110px;
+    }
+
+    .matn h1 {
+        font-size: 17px !important;
+        /* Sarlavha hajmini kamaytiramiz */
+
+    }
+
+    .matn p {
+        font-size: 14px !important;
+        /* Matn hajmini kamaytiramiz */
+    }
+
 }

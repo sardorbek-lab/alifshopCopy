@@ -33,11 +33,8 @@ const Banner = () => {
   };
 
 
-  const dispatch2 = useDispatch();
 
-  const handleAddToCart = () => {
-    dispatch(addToCart(product));
-  };
+ 
 
   const renderKartalar = (malumotlar, sarlavha) => (
     <div style={{ marginTop: '-20px' }} className="asosiy-konteyner">
